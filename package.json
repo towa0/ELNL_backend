@@ -13,11 +13,7 @@
     "mongodb": "^6.2.0"
   },
   "scripts": {
-    "start": "node express-api.js",
-    "build": "react-scripts build",
-    "deploy": "npm install --omit=dev && npm run build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node express-api.js"
   },
   "eslintConfig": {
     "extends": ["react-app", "react-app/jest"]
