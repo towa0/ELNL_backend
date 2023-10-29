@@ -26,31 +26,19 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "develop": "concurrently \"react-scripts start\" \" node ./src/services/express-api.js\"",
-    "start": "concurrently \"react-scripts start\" \" node ./src/services/express-api.js\"",
+    "develop": "concurrently \"react-scripts start\" \"node ./src/services/express-api.js\"",
+    "start": "concurrently \"react-scripts start\" \"node ./src/services/express-api.js\"",
     "build": "CI=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "seeds": "node ./src/services/seeds/express-api.js"
   },
-  },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": ["react-app", "react-app/jest"]
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
