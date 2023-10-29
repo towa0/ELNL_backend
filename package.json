@@ -4,6 +4,8 @@
   "private": true,
   "engines": {
     "node": "18.x"
+  "main": "express-api.js",
+
   },
   "dependencies": {
     "@babel/plugin-proposal-numeric-separator": "^7.18.6",
