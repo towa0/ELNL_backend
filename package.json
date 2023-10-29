@@ -25,7 +25,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node express-api.js",
     "build": "react-scripts build",
     "deploy": "npm install --omit=dev && npm run build",
     "test": "react-scripts test",
