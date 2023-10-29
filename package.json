@@ -10,11 +10,11 @@
     "mongoose": "^7.6.3",
     "cors": "^2.8.5",
     "firebase-admin": "^11.11.0",
-    "mongodb": "^6.2.0",
+    "mongodb": "^6.2.0"
   },
   "scripts": {
     "start": "node express-api.js",
-     "build": "react-scripts build",
+    "build": "react-scripts build",
     "deploy": "npm install --omit=dev && npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -29,5 +29,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
+  }
 }
