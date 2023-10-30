@@ -13,7 +13,7 @@ const carSchema = new mongoose.Schema(
     Brand: String,
     CarNameFull: String,
   },
-  { collection: "Autos" }
+  { collection: "Autos" } 
 );
 
 const Car = mongoose.model("Autos", carSchema);
