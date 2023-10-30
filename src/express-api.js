@@ -26,12 +26,16 @@ app.get("/", (req, res) => {
 app.get("/api/cars", async (req, res) => {
   try {
     const cars = await Car.find();
-    res.json(cars); 
+    if (cars.length === 0) {
+      console.log("No cars found in the 'Autos' collection.");
+    }
+    res.json(cars);
   } catch (error) {
     console.error("Error fetching cars:", error);
     res.status(500).json({ message: "Internal server error" });
   }
 });
+
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
